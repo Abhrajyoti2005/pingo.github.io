@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+{% block body %}
+<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='dashboard.css')}}">
+<div class="dashboard">
+	<table>
+		<tr>
+			<th>ID</th>
+			<th>Names</th>
+			<th>Subjects</th>
+			<th>Dates</th>
+			<th>Edit</th>
+			<th>Delete</th>
+		</tr>
+		{% for post in posts %}
+		<tr>
+			<td>{{post.ID}}</td>
+			<td>{{post.Name}}</td>
+			<td>{{post.Subject}}</td>
+			<td>{{post.Datetime}}</td>
+			<td><a href="/edit/{{post.ID}}"><button>Edit</button></a></td>
+			<td><a href="/dashboard/{{post.ID}}"><button>Delete</button></a></td>
+		</tr>
+		{% endfor %}
+	</table>
+</div>
+{% endblock %}

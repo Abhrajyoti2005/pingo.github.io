@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block body %}
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='website_style.css') }}" />
+		{% for posts in post %}
+		<div class="posts">
+			<h2>{{posts.Subject}}</h2>
+			<hr>
+			<p>{{posts.Content[0:500]}}...</p>
+			<br>
+			<p>Written by {{posts.Name}}</p>
+			<form action="/post/{{posts.Slug}}" method="GET">
+				<input type="submit" value="Show Blog">
+			</form>
+		</div>
+		<br>
+		{% endfor %}
+{% endblock %}

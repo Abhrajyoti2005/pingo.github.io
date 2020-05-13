@@ -1,0 +1,40 @@
+form{
+	position:fixed;
+	top: 25%;
+	left:35%;
+	background-color: black;
+	opacity: 0.8;
+	min-height: 50px;
+	min-width: 80px;
+	padding: 50px;
+}
+input{
+	margin:5px;
+	border-radius: 10px;
+	width: 400px;
+	height: 30px;
+	padding-left: 20px;
+	border:none;
+}
+textarea{
+	margin:5px;
+	width: 400px;
+	padding-left: 20px;
+	min-height: 100px;
+	border:none;
+	overflow: scroll;
+	resize: none;
+	border-radius: 10px;
+	overflow-x: hidden;
+
+}
+input[type="submit"]{
+	border:none;
+	background-color: brown;
+	opacity: 0.8
+	color:white;
+	cursor: pointer;
+}
+input:hover{
+	box-shadow: 0px 0px 5px lightgrey;
+}

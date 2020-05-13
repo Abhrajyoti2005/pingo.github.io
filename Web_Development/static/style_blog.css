@@ -1,0 +1,133 @@
+body{
+	opacity: 1;
+	height: 160%;
+}
+nav{
+	background-image: url('blog_wallpaper.jpg');
+	min-height: 500px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+nav ul li{
+	color: white;
+	list-style-type: none;
+	display: inline-block;
+	margin: 15px;
+}
+nav ul li a{
+	color: white;
+	text-decoration: none;
+	font-size: 15pt;
+	padding: 10px;
+}
+nav ul li:hover a:hover{
+	color: orange;
+	border-radius: 10px;
+}
+#logo{
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	font-family: forte;
+	font-size: 15pt;
+}
+#P{
+	color: white;
+}
+#I{
+	color: #943126;
+}
+#N{
+	color: #5B2C6F;
+}
+#G{
+	color: #1A5276 ;
+}
+#O{
+	color: #873600;
+}
+div.title{
+	position: relative;
+	text-align: center;
+	top: 200px;
+}
+.title h1{
+	color: white;
+	font-family: forte;
+	height: 50px;
+	font-size: 25pt;
+}
+.body{
+	width: 97%;
+	position: absolute;
+	left: 0;
+	background-color: black;
+	color: white;
+	top: 505px;
+	opacity: 0.8;
+	padding: 20px;
+	min-height: 93%;
+}
+.body p{
+	font-size: 18pt;
+}
+.body:hover{
+	cursor: pointer;
+
+}
+footer{
+	color: white;
+	background-color: green;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	cursor: pointer;
+	z-index: 0; 
+}
+footer:hover{
+	animation: colors 5s infinite;
+	animation-play-state: running;
+	animation-delay: 0s;
+	animation-iteration-count:1;
+	animation-fill-mode: forwards;
+	background-color: none;
+}
+footer:hover #circle{
+	animation: shapes 10s infinite;
+	animation-delay: 0s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: 1;
+}
+#circle{
+	float: right;
+	background-color: red;
+	height: 20px;
+	width: 20px;
+	position: relative;
+	margin-right: 5px;
+	z-index: 1;
+	border:2px solid black;
+	bottom: 0;
+}
+@keyframes colors{
+	from{
+		background-color: green;
+	}
+	to{
+		background-color: royalblue;
+	}
+}
+@keyframes shapes{
+	from{
+		border-radius: 0;
+	}
+	to{
+		border-radius: 100px;
+		background-color: green;
+	} 
+}

@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+{% block body %}
+<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='index_style.css')}}">
+<!-- <script type="text/javascript">
+	function changeBackground(){
+		if (document.body.style.backgroundImage=="url('../static/background-milky.jpeg')"){
+			document.body.style.backgroundImage = "url('../static/background.jpg')";
+		}
+		else if(document.body.style.backgroundImage=="url('../static/background.jpeg')"){
+			document.body.style.backgroundImage="url('../static/background-milky.jpeg')";
+		}
+		else{
+			document.body.style.backgroundImage="url('../static/background-milky.jpeg')";
+		}
+	}
+	function click(){
+		var background = document.getElementById('chn_bckgrn');
+		delete background
+		tion changeBackground(){
+		if (document.body.style.backgroundImage=="url('../static/background-milky.jpeg')"){
+			document.body.style.backgroundImage = "url('../static/background.jpg')";
+		}
+		else{
+			document.body.style.backgroundImage="url('../static/background-milky.jpeg')";
+		}
+	}
+</script> -->
+<div class="index_body">
+	<img src="{{url_for('static',filename='download.png')}}">
+	<table>
+		<tr>
+			<th>Name: </th>
+			<td><a href="/contact">{{user}}</a></td>
+		</tr>
+			<!-- <button onclick="click()" id="chn_bckgrn"> Change Background </button> -->
+	</table>
+	<p>Welcome to our website</p>
+</div>
+{% endblock %}

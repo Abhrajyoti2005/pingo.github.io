@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block title %}pingo.com | Create Blog{% endblock %}
+{% block body %}
+<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='blogedit.css')}}">
+<div class="form">
+	<form method="POST"  action="/designblog" id="form">
+		<input type="text" name="Name" placeholder="Name" required="required" title="Name"><br>
+		<input type="text" name="Subject" placeholder="Subject" required="required" title="Subject"><br>
+		<input type="text" name="Slag" placeholder="Slag" required="required" title="Slag"><br>
+		<textarea name="Content" placeholder="Write your Content here" required="required" title="content"></textarea><br>
+		<input type="submit" name="submit" value="Submit" title="Click here to submit the form"><br>
+	</form>
+</div>
+
+{% endblock %}

@@ -1,0 +1,41 @@
+
+	<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pingo.com</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+    <link rel="shortcut icon" href="{{url_for('static',filename='favicon.gif')}}">
+</head>
+<!--main body-->
+<body>
+    <!--navigation Bar-->
+    <nav>
+        <ul>
+            <li><a href="/">Account</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/website">Website</a></li>
+            <li><a href="/designblog">Create Blog</a></li>
+            <li><a href="/dashboard">Login</a></li>
+            <li><a href="/logout">Logout</a></li>
+        </ul>
+        <div id="logo">
+            <span id="P">P</span>
+            <span id="I">I</span>
+            <span id="N">N</span>
+            <span id="G">G</span>
+            <span id="O">O</span>
+        </div>
+    </nav>
+{% block body %}{% endblock %}
+
+    <footer>
+    &copy; Made by Abhrajyoti Das 2020.
+    <div id="circle">
+        
+    </div>
+</footer>
+    <!--main body-->
+</body>
+<!--main Body-->
+</html>

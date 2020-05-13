@@ -1,0 +1,23 @@
+
+<html>
+<head>
+	<title>Login | Pingo.com</title>
+	<link rel="stylesheet" href="{{url_for('static',filename='login.css')}}">
+</head>
+<body>
+	<div class="login">
+		<img src="{{url_for('static',filename='download.png')}}">
+		<form action="/dashboard" method="POST">
+			<input type="text" name="User_name" placeholder="Username" id="uname"><br>
+			<input type="password" name="User_pass" placeholder="Password" id="upass"><br>
+			<input type="submit" value="Submit">
+		</form>
+	</div>
+	<footer>
+    &copy; Made by Abhrajyoti Das 2020.
+    <div id="circle">
+        
+    </div>
+</footer>
+</body>
+</html>

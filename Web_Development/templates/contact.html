@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block title %}pingo.com | Contacts{% endblock %}
+{% block body %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style_contact.css') }}">
+<div class="form">
+	<form method="POST"  action="/contact" id="form">
+		<input type="text" name="Name" placeholder="Name" required="required" title="Name"><br>
+		<input type="email" name="Email" placeholder="Email Address" required="required" title="Email"><br>
+		<input type="text" name="Phone_num" placeholder="Phone Number" required="required" title="Password" maxlength="10" inputmode="Number"><br>
+		<textarea placeholder="Write your message here" name="Message" required="required" title="message"></textarea><br>
+		<input type="submit" name="submit" value="Submit" title="Click here to submit the form"><br>
+	</form>
+</div>
+{% endblock %}
